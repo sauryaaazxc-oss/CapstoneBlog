@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog application</title>
+    <link rel="stylesheet" href="/styles/index.css">
+</head>
+<body>
+     
+    <div class="Wblog">
+
+    <h1>My Blog </h1>
+    <a href="/new" class="newpost">New post</a>
+    
+<div>
+   <% Blogs.forEach(blog =>{ %>
+     <h2> <%= blog.title %> </h2> 
+    <small class="small"> <%=  blog.date %> </small>
+     <p> <%= blog.content %> </p>
+    <small class="small">By:<%= blog.author %> </small>
+</div>
+
+<div class="lastsec">
+
+     <a href="/edit/<%= blog.id %>" class="edit">Edit </a> 
+     <a href="/api/post/delete/<%= blog.id %>" class="delete">Delete </a> 
+     </div>
+     <hr>
+      
+  <% }) %>
+  </div>
+  
+
+    
+</body>
+</html>

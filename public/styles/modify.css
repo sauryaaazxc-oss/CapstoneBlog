@@ -1,0 +1,57 @@
+body{
+   margin:20px;
+   font-family: Arial, Helvetica, sans-serif;
+   background: #d4d8dd;
+   height: 200px;
+}
+
+.modify{
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.content{
+    padding:8px;
+    font-size: 16px;
+}
+
+.btn{
+    height:30px;
+    background-color: rgb(81, 81, 243);
+    color: white;
+}
+
+.edit{
+    
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.author,.title{
+    height: 25px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1em;
+  outline: none;
+  transition: border 0.3s;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #007bff;
+}

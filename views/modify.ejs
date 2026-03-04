@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEW POST</title>
+    <link rel="stylesheet" href="/styles/modify.css">
+</head>
+<body>
+   
+   <% if(locals.post) { %>
+   <form action ="/edit/<%=post.id%>" method="post" class="edit">
+
+      <h1> <%= heading %> </h1>
+
+       <input type="test" placeholder="title" name="title" value = "<%= post.title %>" class="title" >
+        
+        <textarea name="content" rows="'10" cols="60" class="content"  placeholder="content"> <%= post.content %> </textarea>
+        
+        <input type="text" name="author" placeholder="author" class="author" value="<%= post.author %>">
+   
+        <button type="submit" class="btn"> <%= Submit %></button>
+        </form>
+
+  <% } else { %>
+        <form action ="/submit" method="post" class="modify">
+            <h1> <%= heading %> </h1>
+            
+            <input type="test" placeholder="title" class="title" name="title">
+            
+        
+            
+            <textarea name="content" rows="'10" cols="60" class="content"  placeholder="content"></textarea>
+            
+        
+    
+            <input type="text" name="author" placeholder="author" class="author">
+    
+
+        
+            <button type="submit" class="btn"> <%= Submit %></button>
+        
+        </form>
+<%  } %>
+    
+
+
+    
+</body>
+</html>
