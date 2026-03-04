@@ -64,21 +64,5 @@ hr{
     margin-bottom: 10px;
 }
 .small{
-    color: grey;
-}
-
-input,
-textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  font-size: 1em;
-  outline: none;
-  transition: border 0.3s;
-}
-
-input:focus,
-textarea:focus {
-  border-color: #007bff;
+    color: beige;
 }
